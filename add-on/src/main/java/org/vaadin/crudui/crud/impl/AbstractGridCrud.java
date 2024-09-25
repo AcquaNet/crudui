@@ -26,9 +26,9 @@ import org.vaadin.crudui.layout.impl.WindowBasedCrudLayout;
  */
 public abstract class AbstractGridCrud<T> extends AbstractCrud<T> {
 
-	protected String rowCountCaption = "%d items(s) found";
-	protected String savedMessage = "Item saved";
-	protected String deletedMessage = "Item deleted";
+	protected String rowCountCaption = "%d ítems(s) encontrados";
+	protected String savedMessage = "Ítem actualizado";
+	protected String deletedMessage = "Ítem eliminado";
 	protected boolean showNotifications = true;
 
 	protected Button findAllButton;
@@ -71,20 +71,20 @@ public abstract class AbstractGridCrud<T> extends AbstractCrud<T> {
 
 	protected void initLayout() {
 		findAllButton = new Button(VaadinIcon.REFRESH.create(), e -> findAllButtonClicked());
-		findAllButton.getElement().setAttribute("title", "Refresh list");
+		findAllButton.getElement().setAttribute("title", "Actualizar");
 
 		crudLayout.addToolbarComponent(findAllButton);
 
 		addButton = new Button(VaadinIcon.PLUS.create(), e -> addButtonClicked());
-		addButton.getElement().setAttribute("title", "Add");
+		addButton.getElement().setAttribute("title", "Agregar");
 		crudLayout.addToolbarComponent(addButton);
 
 		updateButton = new Button(VaadinIcon.PENCIL.create(), e -> updateButtonClicked());
-		updateButton.getElement().setAttribute("title", "Update");
+		updateButton.getElement().setAttribute("title", "Actualizar");
 		crudLayout.addToolbarComponent(updateButton);
 
 		deleteButton = new Button(VaadinIcon.TRASH.create(), e -> deleteButtonClicked());
-		deleteButton.getElement().setAttribute("title", "Delete");
+		deleteButton.getElement().setAttribute("title", "Eliminar");
 		crudLayout.addToolbarComponent(deleteButton);
 
 		grid = createGrid();

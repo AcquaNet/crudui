@@ -13,7 +13,7 @@ public class StringToCharacterConverter implements Converter<String, Character> 
 		}
 
 		if (value.length() > 1) {
-			return Result.error("Could not convert '" + value);
+			return Result.error("No se pudo convertir el valor '" + value);
 		}
 
 		return Result.ok(value.charAt(0));

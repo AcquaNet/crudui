@@ -83,7 +83,7 @@ public abstract class AbstractTwoComponentsCrudLayout extends Composite<Div> imp
 		secondComponent.add(formComponentLayout);
 		secondComponent.expand(formComponentLayout);
 
-		setFormCaption(CrudOperation.DELETE, "Are you sure you want to delete this item?");
+		setFormCaption(CrudOperation.DELETE, "Está seguro que quiere eliminar este ítem?");
 	}
 
 	protected abstract Component buildMainLayout();

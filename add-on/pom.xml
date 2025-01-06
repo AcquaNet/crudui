@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.sota</groupId>
-	<artifactId>crudui</artifactId>
+	<artifactId>crud-ui</artifactId>
 	<packaging>jar</packaging>
 	<version>7.1.2</version>
 	<name>Crud UI Add-on</name>
@@ -15,11 +15,8 @@
 		<maven.compiler.target>21</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
 		<vaadin.version>24.4.11</vaadin.version>
-
 		<drivers.dir>${project.basedir}/drivers</drivers.dir>
-		<maven.deploy.skip>true</maven.deploy.skip>
 	</properties>
 
 	<licenses>
@@ -54,7 +51,7 @@
 			<url>http://157.245.236.175:8081/artifactory/libs-release</url>
 		</repository>
 	</distributionManagement>
-	
+
 	<repositories>
 		<repository>
 			<id>Vaadin Directory</id>
